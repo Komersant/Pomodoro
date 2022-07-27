@@ -5,33 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Animals planet</title>
+    <link rel="stylesheet" href="./css/iconsfont.css" />
+    <title>Pomodoro</title>
   </head>
   <body>
-    <div class="slider-car__container">
-      <div
-        class="slider-car__slide _active"
-        style="background-image: url(./img/1.jpg)"
-      >
-        <h2>Goat</h2>
-      </div>
-      <div class="slider-car__slide" style="background-image: url(./img/2.jpg)">
-        <h2>Elephant</h2>
-      </div>
-      <div class="slider-car__slide" style="background-image: url(./img/3.jpg)">
-        <h2>Lizards</h2>
-      </div>
-      <div class="slider-car__slide" style="background-image: url(./img/4.jpg)">
-        <h2>Dog</h2>
-      </div>
-      <div class="slider-car__slide" style="background-image: url(./img/5.jpg)">
-        <h2>Еurtle</h2>
-      </div>
-      <div class="slider-car__slide" style="background-image: url(./img/6.jpg)">
-        <h2>Monkey</h2>
-      </div>
-      <div class="slider-car__slide" style="background-image: url(./img/7.jpg)">
-        <h2>Parrot</h2>
+    <div class="wrapper _active-red">
+      <div class="pomodoro__container">
+        <div class="pomodoro__header">
+          <div class="pomodoro__icon _icon-add"></div>
+          <h1>Pomofocus</h1>
+        </div>
+        <div class="pomodoro__body">
+          <div class="pomodoro__tabs-link">
+            <a id="red" href="#tab1" class="pomodoro__link">Pomodoro</a>
+            <a id="blue" href="#tab2" class="pomodoro__link">Short Break</a>
+            <a id="green" href="#tab3" class="pomodoro__link">Long Break</a>
+          </div>
+          <div class="pomodoro__tabs">
+            <div class="pomodoro__tab">
+              <p id="tab1" class="pomodoro__time">25:00</p>
+            </div>
+            <div class="pomodoro__tab">
+              <p id="tab2" class="pomodoro__time">05:00</p>
+            </div>
+            <div class="pomodoro__tab">
+              <p id="tab3" class="pomodoro__time">15:00</p>
+            </div>
+            <div class="pomodoro__tab"></div>
+          </div>
+          <div class="pomodoro__btn-body _active-color-red">
+            <div class="pomodoro__btn">Start</div>
+            <div class="pomodoro__btn-stop">Stop</div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./js/script.js"></script>
